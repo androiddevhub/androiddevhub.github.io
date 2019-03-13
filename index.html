@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<title>Android导航</title>
+<meta name="keywords" content="Android导航ˇ程序员导航,程序猿导航,Android导航,Android网址导航,IT导航,Android程序员导航,码农导航,面试">
+<meta name="description" content="Android导航ˇ程序员导航,程序猿导航,Android导航,Android网址导航,IT导航,Android程序员导航,码农导航,面试">
+<meta name="HandheldFriendly" content="True"/>
+<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<link rel="Shortcut Icon" type="image/x-icon" href="../static/imgs/jk.png">
+<script src="../static/js/jquery-1.12.4.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="../static/css/search.css"/>
+<link rel="stylesheet" type="text/css" href="../static/css/reset.css"/>
+<link rel="canonical" href="http://www.jikedaohang.com/"/>
+<meta name="referrer" content="origin"/>
+<script>
+        var _hmt = _hmt || [];
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?af56dfbc035c657de3388b6e9dde0d51";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    </script>
+</head>
+<body class="home-template">
+<nav class="main-navigation">
+<div class="title">
+	<p>
+		Android导航
+	</p>
+</div>
+</nav><section class="content-wrap">
+<div class="container">
+	<div class="col-md-9">
+		<div class="col-md-1">
+			<div>
+				<img src="../static/imgs/qinyuan.png" alt="" width="80px" height="80px">
+			</div>
+		</div>
+		<div class="col-md-2" style="margin-bottom: 20px">
+			<div class="input-group divs" tabindex="0">
+				<input id="searchText" type="text" class="form-control" style="border: 0px" placeholder="请输入搜索内容" autocomplete="off"/>
+				<span class="input-group-btn"><button type="button" id="btnsearch" class="btn btn-success" onclick="btn()" style="border: 0px">搜索</button></span>
+			</div>
+			<div class="divs">
+				<div id="auto">
+				</div>
+			</div>
+			<div class="main-radio" style="width: 930px;margin: 0 auto">
+				<input type="radio" value="0" id="radio" name="check" onchange="test(this)" checked/>
+				<span>百度</span>&nbsp;&nbsp;&nbsp;
+				<input type="radio" value="1" id="radio" name="check" onchange="test(this)"/>
+				<span>谷歌</span>&nbsp;&nbsp;&nbsp;
+				<input type="radio" value="2" id="radio" name="check" onchange="test(this)"/>
+				<span>必应</span>&nbsp;&nbsp;&nbsp;
+				<input type="radio" value="3" id="radio" name="check" onchange="test(this)"/>
+				<span>GitHub</span>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-9">
+		<div class="col-md-1">
+			<div class="widget">
+				<a class="title" style="text-decoration: none" href="#1">常用网站</a>
+			</div>
+			<div class="widget">
+				<a class="title" style="text-decoration: none" href="#2">Android官方</a>
+			</div>
+			<div class="widget">
+				<a class="title" style="text-decoration: none" href="#3">技术资源</a>
+			</div>
+			<div class="widget">
+				<a class="title" style="text-decoration: none" href="#4">在线学习</a>
+			</div>
+			<div class="widget">
+				<a class="title" style="text-decoration: none" href="#5">经典博客</a>
+			</div>
+			<div class="widget">
+				<a class="title" style="text-decoration: none" href="#7">求职招聘</a>
+			</div>
+			<div class="widget">
+				<a class="title" style="text-decoration: none" href="#8">大厂</a>
+			</div>
+			<div class="widget">
+				<a class="title" style="text-decoration: none" href="#9">设计</a>
+			</div>
+			<div class="widget">
+				<a class="title" style="text-decoration: none" href="#10">开发服务</a>
+			</div>
+			<div class="widget">
+				<a class="title" style="text-decoration: none" href="#11">推送服务</a>
+			</div>
+			<div class="widget">
+				<a class="title" style="text-decoration: none" href="#12">通信服务</a>
+			</div>
+			<div class="widget">
+				<a class="title" style="text-decoration: none" href="#13">应用加固</a>
+			</div>
+			<div class="widget">
+				<a class="title" style="text-decoration: none" href="#14">其他</a>
+			</div>
+		</div>
+		<main class="col-md-2 main-content">
+		<div id="1" class="post">
+			<div class="widget">
+				<a class="title" style="text-decoration: none">常用网站</a>
+			</div>
+			<div class="tab-item">
+				<a class="box-item" href="http://www.github.com/" target="_blank">GitHub</a>
+				<a class="box-item" href="https://github.com/trending" target="_blank">Trending</a>
+				<a class="box-item" href="http://wanandroid.com/" target="_blank">玩Android</a>
+				<a class="box-item" href="http://p.codekk.com/" target="_blank">CodeKK</a>
+				<a class="box-item" href="https://www.zhihu.com/" target="_blank">知乎</a>
+				<a class="box-item" href="https://stackoverflow.com/" target="_blank">Stackoverflow</a>
+				<a class="box-item" href="http://bbs.51cto.com/forum-291-1.html" target="_blank">51CTO</a>
+				<a class="box-item" href="https://segmentfault.com/t/android" target="_blank">Segmentfault</a>
+				<a class="box-item" href="http://www.csdn.net/" target="_blank">CSDN</a>
+				<a class="box-item" href="https://www.infoq.cn/" target="_blank">InfoQ</a>
+				<a class="box-item" href="https://juejin.im/welcome/android" target="_blank">掘金</a>
+				<a class="box-item" href="https://www.jianshu.com/c/5139d555c94d" target="_blank">简书</a>
+				<a class="box-item" href="https://www.oschina.net/" target="_blank">开源中国</a>
+				<a class="box-item" href="https://toutiao.io " target="_blank">开发者头条</a>
+				<a class="box-item" href="http://gank.io/" target="_blank">干货集中营</a>
+				<a class="box-item" href="http://www.tuicool.com/" target="_blank">推酷</a>
+				<a class="box-item" href="https://xiaozhuanlan.com/" target="_blank">小专栏</a>
+				<a class="box-item" href="https://medium.com" target="_blank">medium</a>
+				<a class="box-item" href="http://www.jikedaohang.com/" target="_blank">极客导航</a>
+				<a class="box-item" href="https://flutterchina.club/" target="_blank">flutter中文</a>
+				<a class="box-item" href="http://www.dartdoc.cn/" target="_blank">Dart</a>
+			</div>
+		</div>
+		<div id="2" class="post">
+			<div class="widget">
+				<a class="title" style="text-decoration: none">Android官方</a>
+			</div>
+			<div class="tab-item">
+				<a class="box-item" href="https://developer.android.com/index.html" target="_blank">Android开发官网</a>
+				<a class="box-item" href="https://developer.android.google.cn/index.html" target="_blank">Android开发中文</a>
+				<a class="box-item" href="https://android-developers.googleblog.com/" target="_blank">Android开发博客</a>
+				<a class="box-item" href="https://developers.google.cn/" target="_blank">谷歌开发者</a>
+				<a class="box-item" href="https://developers.googleblog.cn/" target="_blank">谷歌开发者博客</a>
+				<a class="box-item" href="https://codelabs.developers.google.com/?cat=Android" target="_blank">Android开发实验室</a>
+				<a class="box-item" href="https://www.udacity.com/course/android-development-for-beginners--ud837" target="_blank">Android开发课程</a>
+				<a class="box-item" href="http://chinagdg.org/" target="_blank">谷歌开发者社区</a>
+				<a class="box-item" href="https://developer.android.com/topic/libraries/support-library/features.html" target="_blank">支持库功能</a>
+				<a class="box-item" href="https://developer.android.com/topic/libraries/support-library/revisions.html" target="_blank">支持库更新</a>
+				<a class="box-item" href="http://tools.android.com/" target="_blank">AS Project</a>
+				<a class="box-item" href="http://services.gradle.org/distributions/" target="_blank">GradleDistributions</a>
+				<a class="box-item" href="https://www.androidweekly.cn/" target="_blank">开发者周报</a>
+				<a class="box-item" href="http://www.androidblog.cn/" target="_blank">Android Blog</a>
+			</div>
+		</div>
+		<div id="3" class="post">
+			<div class="widget">
+				<a class="title" style="text-decoration: none">技术资源</a>
+			</div>
+			<div class="tab-item">
+				<a class="box-item" href="http://www.androiddevtools.cn/" target="_blank">AndroidDevTools</a>
+				<a class="box-item" href="http://www.lottiefiles.com/" target="_blank">Lottie</a>
+				<a class="box-item" href="https://www.androidos.net.cn/sourcecode" target="_blank">Android源码</a>
+				<a class="box-item" href="http://androidxref.com/" target="_blank">androidxref</a>
+				<a class="box-item" href="https://dl.google.com/dl/android/maven2/index.html" target="_blank">google mvn仓库</a>
+				<a class="box-item" href="https://mvnrepository.com/artifact/com.google.code.gson/gson" target="_blank">maven仓库</a>
+				<a class="box-item" href="http://jcenter.bintray.com/" target="_blank">jcenter仓库</a>
+				<a class="box-item" href="http://p.codekk.com/" target="_blank">CodeKK</a>
+				<a class="box-item" href="http://www.jcodecraeer.com/plus/list.php?tid=31" target="_blank">泡在网上的日子</a>
+				<a class="box-item" href="http://www.w3school.com.cn/index.html" target="_blank">W3school</a>
+				<a class="box-item" href="http://www.apkbus.co" target="_blank">安卓巴士</a>
+				<a class="box-item" href="https://android-arsenal.com/free" target="_blank">Android Arsenal</a>
+			</div>
+		</div>
+		<div id="4" class="post">
+			<div class="widget">
+				<a class="title" style="text-decoration: none">在线学习</a>
+			</div>
+			<div class="tab-item">
+				<a class="box-item" href="http://www.imooc.com/course/list?c=android" target="_blank">慕课网</a>
+				<a class="box-item" href="http://study.163.com/category/android" target="_blank">网易云课程</a>
+				<a class="box-item" href="http://www.jikexueyuan.com/course/android/" target="_blank">极客学院</a>
+				<a class="box-item" href="http://www.maiziedu.com/course/android/" target="_blank">麦子学院</a>
+				<a class="box-item" href="https://ke.qq.com/course/list?mt=1001&st=2003&tt=3021" target="_blank">腾讯课堂</a>
+				<a class="box-item" href="https://www.nowcoder.com/" target="_blank">牛客网</a>
+				<a class="box-item" href="http://luo.apkbus.com/" target="_blank">老罗视频教程</a>
+				<a class="box-item" href="http://mars.apkbus.com/" target="_blank">mars视频</a>
+				<a class="box-item" href="http://gitbook.cn/gitchat/free" target="_blank">gitchat免费区</a>
+			</div>
+		</div>
+		<div id="5" class="post">
+			<div class="widget">
+				<a class="title" style="text-decoration: none">经典博客</a>
+			</div>
+			<div class="tab-item">
+				<a class="box-item" href="https://blog.csdn.net/guolin_blog" target="_blank">郭霖</a>
+				<a class="box-item" href="https://blog.csdn.net/lmj623565791" target="_blank">张鸿洋</a>
+				<a class="box-item" href="https://blog.csdn.net/qibin0506" target="_blank">亓斌</a>
+				<a class="box-item" href="https://blog.csdn.net/Luoshengyang" target="_blank">罗升阳</a>
+				<a class="box-item" href="https://blog.csdn.net/singwhatiwanna" target="_blank">任玉刚</a>
+				<a class="box-item" href="https://blog.csdn.net/eclipsexys" target="_blank">徐医生</a>
+				<a class="box-item" href="https://blog.csdn.net/bboyfeiyu" target="_blank">MrSimp1e</a>
+				<a class="box-item" href="http://www.wjdiankong.cn/" target="_blank">尼古拉斯.赵四</a>
+				<a class="box-item" href="https://droidyue.com" target="_blank">技术小黑屋</a>
+				<a class="box-item" href="https://blog.csdn.net/xiaoyuan511" target="_blank">小源</a>
+				<a class="box-item" href="http://www.cnblogs.com/innost/" target="_blank">邓凡平</a>
+				<a class="box-item" href="https://blog.csdn.net/ns_code" target="_blank">兰亭风雨</a>
+				<a class="box-item" href="https://blog.csdn.net/aigestudio" target="_blank">aigestudio</a>
+				<a class="box-item" href="http://hukai.me/" target="_blank">胡凯</a>
+				<a class="box-item" href="http://weishu.me/archives/" target="_blank">Weishu</a>
+				<a class="box-item" href="http://gityuan.com/" target="_blank">Gityuan</a>
+				<a class="box-item" href="http://www.gcssloop.com/timeline" target="_blank">Gcssloop</a>
+				<a class="box-item" href="https://hencoder.com/" target="_blank">Hencoder</a>
+				<a class="box-item" href="https://www.jowanxu.top/archives/" target="_blank">旺仔</a>
+				<a class="box-item" href="https://blog.csdn.net/qq_17250009/" target="_blank">一口仨馍</a>
+				<a class="box-item" href="https://guolei1130.github.io/" target="_blank">_StriveG 博客</a>
+				<a class="box-item" href="https://www.jianshu.com/u/383970bef0a0" target="_blank">Carson_Ho</a>
+				<a class="box-item" href="http://prototypez.github.io/" target="_blank">Prototypez</a>
+				<a class="box-item" href="https://www.androidperformance.com/" target="_blank">Gracker</a>
+				<a class="box-item" href="http://yifeng.studio/archives/" target="_blank">亦枫</a>
+				<a class="box-item" href="http://toughcoder.net/" target="_blank">稀有猿诉</a>
+				<a class="box-item" href="http://wl9739.github.io/archives/" target="_blank">Eateeer的笔记屋</a>
+				<a class="box-item" href="http://www.trinea.cn/" target="_blank">trinea</a>
+				<a class="box-item" href="http://blog.devwiki.net/" target="_blank">DevWiki Blog</a>
+				<a class="box-item" href="http://blankj.com/" target="_blank">布兰柯基</a>
+				<a class="box-item" href="http://blog.csdn.net/hyr83960944?viewmode=contents" target="_blank">hyr83960944</a>
+				<a class="box-item" href="http://www.jianshu.com/u/0e0821e94979" target="_blank">wutongke</a>
+				<a class="box-item" href="http://liuwangshu.cn/" target="_blank">刘望舒</a>
+				<a class="box-item" href="http://leoray.leanote.com/" target="_blank">Leo</a>
+				<a class="box-item" href="http://androidperformance.com/" target="_blank">高爷</a>
+				<a class="box-item" href="http://yifeiyuan.me/" target="_blank">程序亦非猿</a>
+				<a class="box-item" href="http://wuxiaolong.me/" target="_blank">吴小龙同学</a>
+				<a class="box-item" href="http://www.codemx.cn/" target="_blank">墨香</a>
+				<a class="box-item" href="https://blog.csdn.net/x1971481259" target="_blank">秦军锐士</a>
+			</div>
+		</div>
+		<div id="7" class="post">
+			<div class="widget">
+				<a class="title" style="text-decoration: none">求职招聘</a>
+			</div>
+			<div class="tab-item">
+				<a class="box-item" href="https://www.lagou.com/" target="_blank">拉钩</a>
+				<a class="box-item" href="https://www.51job.com/" target="_blank">前程无忧</a>
+				<a class="box-item" href="https://cn.100offer.com/" target="_blank">100offer</a>
+				<a class="box-item" href="https://www.zhaopin.com/" target="_blank">智联</a>
+				<a class="box-item" href="http://www.zhipin.com/" target="_blank">Boss直聘</a>
+				<a class="box-item" href="https://www.liepin.com/" target="_blank">猎聘网</a>
+				<a class="box-item" href="https://www.dajie.com/" target="_blank">大街网</a>
+				<a class="box-item" href="http://www.chinahr.com/home/sz/" target="_blank">中华英才网</a>
+				<a class="box-item" href="http://www.neitui.me/" target="_blank">内推网</a>
+			</div>
+		</div>
+		<div id="8" class="post">
+			<div class="widget">
+				<a class="title" style="text-decoration: none">大厂</a>
+			</div>
+			<div class="tab-item">
+				<a class="box-item" href="https://tech.meituan.com/" target="_blank">美团点评</a>
+				<a class="box-item" href="https://joyrun.github.io/" target="_blank">悦跑圈</a>
+				<a class="box-item" href="https://kaolamobile.github.io/" target="_blank">网易考拉</a>
+				<a class="box-item" href="https://tech.youzan.com/" target="_blank">有赞</a>
+			</div>
+		</div>
+		<div id="9" class="post">
+			<div class="widget">
+				<a class="title" style="text-decoration: none">设计</a>
+			</div>
+			<div class="tab-item">
+				<a class="box-item" href="https://www.materialui.co/colors" target="_blank">MD配色</a>
+				<a class="box-item" href="http://www.iconfont.cn/" target="_blank">iconfont </a>
+				<a class="box-item" href="https://www.chuangkit.com/startdesign" target="_blank">素材设计</a>
+				<a class="box-item" href="https://dribbble.com/" target="_blank">dribbble</a>
+				<a class="box-item" href="https://huaban.com/" target="_blank">花瓣</a>
+				<a class="box-item" href="https://www.designevo.com/cn/" target="_blank">DesignEvo</a>
+			</div>
+		</div>
+		<div id="10" class="post">
+			<div class="widget">
+				<a class="title" style="text-decoration: none">开发服务</a>
+			</div>
+			<div class="tab-item">
+				<a class="box-item" href="https://chrome.google.com/webstore/developer/dashboard/" target="_blank">谷歌开发平台</a>
+				<a class="box-item" href="http://open.qq.com/" target="_blank">腾讯开放平台</a>
+				<a class="box-item" href="https://open.weixin.qq.com/" target="_blank">微信开放平台</a>
+				<a class="box-item" href="http://open.uc.cn/" target="_blank">阿里开放平台</a>
+				<a class="box-item" href="https://open.alipay.com/platform/home.htm" target="_blank">支付宝开放平台</a>
+				<a class="box-item" href="http://app.baidu.com/" target="_blank">百度开放平台</a>
+				<a class="box-item" href="http://open.jd.com/home/home#/index" target="_blank">京东开放平台</a>
+				<a class="box-item" href="http://dev.360.cn/" target="_blank">360开放平台</a>
+				<a class="box-item" href="https://developer.huawei.com/consumer/cn/" target="_blank">华为开放平台</a>
+				<a class="box-item" href="https://dev.mi.com/console/" target="_blank">小米开放平台</a>
+				<a class="box-item" href="https://open.oppomobile.com/" target="_blank">oppo开放平台</a>
+				<a class="box-item" href="https://dev.vivo.com.cn/home" target="_blank">vivo开放平台</a>
+				<a class="box-item" href="http://open.flyme.cn/" target="_blank">魅族开放平台</a>
+				<a class="box-item" href="http://dev.smartisan.com/" target="_blank">锤子开放平台</a>
+				<a class="box-item" href="https://www.xfyun.cn/" target="_blank">讯飞开放平台</a>
+				<a class="box-item" href="https://tutucloud.com/" target="_blank">涂图</a>
+				<a class="box-item" href="https://lbs.amap.com/" target="_blank">高德地图</a>
+				<a class="box-item" href="http://lbsyun.baidu.com/" target="_blank">百度地图</a>
+				<a class="box-item" href="http://lbs.qq.com/" target="_blank">腾讯地图</a>
+				<a class="box-item" href="https://developers.google.cn/maps/documentation/javascript/reference/#OverlayType" target="_blank">Google地图</a>
+				<a class="box-item" href="https://www.bmob.cn/" target="_blank">Bmob后端云</a>
+				<a class="box-item" href="https://leancloud.cn/" target="_blank">Leancloud后端云</a>
+				<a class="box-item" href="https://www.upyun.com/products/short-video" target="_blank">又拍云</a>
+				<a class="box-item" href="https://www.qiniu.com/" target="_blank">七牛云</a>
+				<a class="box-item" href="https://www.umeng.com/" target="_blank">友盟</a>
+				<a class="box-item" href="http://www.mob.com/" target="_blank">ShareSdk</a>
+				<a class="box-item" href="https://fir.im/" target="_blank">fir.im</a>
+				<a class="box-item" href="https://www.pgyer.com/" target="_blank">蒲公英</a>
+				<a class="box-item" href="https://bugly.qq.com/v2/" target="_blank">Bugly</a>
+				<a class="box-item" href="https://www.juhe.cn/service" target="_blank">聚合数据</a>
+				<a class="box-item" href="https://www.faceplusplus.com.cn/" target="_blank">Face++</a>
+				<a class="box-item" href="https://www.pingxx.com/?from=1&amp;desc=baidu" target="_blank">ping++</a>
+			</div>
+		</div>
+		<div id="11" class="post">
+			<div class="widget">
+				<a class="title" style="text-decoration: none">推送服务</a>
+			</div>
+			<div class="tab-item">
+				<a class="box-item" href="https://www.jiguang.cn/" target="_blank">极光推送</a>
+				<a class="box-item" href="https://dev.mi.com/console/appservice/push.html" target="_blank">小米推送</a>
+				<a class="box-item" href="https://www.umeng.com/push?utm_source=bdsem&amp;utm_medium=search&amp;utm_campaign=push&amp;audience=152972" target="_blank">友盟推送</a>
+				<a class="box-item" href="https://www.getui.com/cn/index.html" target="_blank">个推推送</a>
+				<a class="box-item" href="http://dev.10086.cn/aoi/index.jsp" target="_blank">有推推送</a>
+				<a class="box-item" href="https://developer.baidu.com/platform/s7" target="_blank">百度云推送</a>
+				<a class="box-item" href="https://developer.huawei.com/consumer/cn/service/hms/pushservice.html" target="_blank">华为推送</a>
+				<a class="box-item" href="https://push.oppo.com/" target="_blank">Oppo推送</a>
+				<a class="box-item" href="https://xg.qq.com/xg" target="_blank">腾讯信鸽</a>
+			</div>
+		</div>
+		<div id="12" class="post">
+			<div class="widget">
+				<a class="title" style="text-decoration: none">通信服务</a>
+			</div>
+			<div class="tab-item">
+				<a class="box-item" href="http://www.easemob.com/" target="_blank">环信</a>
+				<a class="box-item" href="https://www.rongcloud.cn/" target="_blank">融云</a>
+				<a class="box-item" href="https://netease.im/" target="_blank">云信</a>
+				<a class="box-item" href="https://www.wilddog.com/" target="_blank">野狗</a>
+				<a class="box-item" href="https://www.yuntongxun.com/" target="_blank">容联云</a>
+			</div>
+		</div>
+		<div id="13" class="post">
+			<div class="widget">
+				<a class="title" style="text-decoration: none">应用加固</a>
+			</div>
+			<div class="tab-item">
+				<a class="box-item" href="http://jiagu.360.cn/" target="_blank">360加固</a>
+				<a class="box-item" href="http://www.ijiami.cn/" target="_blank">爱加密</a>
+				<a class="box-item" href="http://dun.163.com/product/android-reinforce" target="_blank">网易云易盾</a>
+			</div>
+		</div>
+		<div id="14" class="post">
+			<div class="widget">
+				<a class="title" style="text-decoration: none">其他</a>
+			</div>
+			<div class="tab-item">
+				<a class="box-item" href="https://www.zhuangbi.info/" target="_blank">装逼大全</a>
+				<a class="box-item" href="https://www.doutula.com/photo/list/" target="_blank">斗图啦</a>
+			</div>
+		</div>
+		</main>
+	</div>
+	<aside class="col-md-3 sidebar">
+	<!-- start tag cloud widget -->
+	<div class="block">
+		<a class="title">常用工具</a>
+		<div class="tag_list tagList">
+			<a href="https://tool.lu/zhconvert/" target="_blank">繁简转换</a>
+			<a href="https://tool.lu/timestamp/" target="_blank">时间戳转换</a>
+			<a href="http://www.wanandroid.com/tools/digit" target="_blank">md5&sha</a>
+			<a href="http://www.wanandroid.com/tools/base64" target="_blank">base64</a>
+			<a href="http://www.wanandroid.com/tools/qrcode" target="_blank">二维码</a>
+			<a href="http://www.wanandroid.com/tools/color" target="_blank">取色器</a>
+			<a href="https://tinypng.com/" target="_blank">tinypng</a>
+			<a href="https://translate.google.cn/" target="_blank">在线翻译</a>
+			<a href="http://www.ip138.com/" target="_blank">IP查询</a>
+			<a href="https://www.mdeditor.com/" target="_blank">MarkDown</a>
+			<a href="https://www.processon.com/" target="_blank">思维导图</a>
+			<a href="http://www.wepe.com.cn/" target="_blank">微PE</a>
+			<a href="https://tool.lu/" target="_blank">在线工具</a>
+		</div>
+	</div>
+	<!-- end tag cloud widget -->
+	<!-- start widget -->
+	<div class="widget">
+		<a class="title">老黄历</a>
+		<div class="content download calendar">
+			<p>
+				日期：
+				<a class="showtime"></a>
+			</p>
+			<p>
+				朝向：面向北写程序，BUG 最少
+			</p>
+			<p>
+				宜饮：酒、果汁
+			</p>
+			<p>
+				女神指数：★★★☆☆
+			</p>
+			<h4 style="color: #31B151">宜：</h4>
+			<a class="calendarevent">别人会觉得你在装逼、</a>
+			<a class="calendarevent">你今天对BUG的嗅觉大大提高、</a>
+			<a class="calendarevent">跟测试妹子搭讪</a>
+			<h4 style="color: red">忌：</h4>
+			<a class="calendarevent">顶撞测试、</a>
+			<a class="calendarevent">新产生的BUG将比修复的更多</a>
+		</div>
+	</div>
+	<!-- end widget -->
+	<!-- start tag cloud widget -->
+	<div class="widget">
+		<a class="title">微信</a>
+		<div class="content tag-cloud wx">
+			<img src="../static/imgs/wx.jpg" alt="" width="200px" height="200px">
+		</div>
+	</div>
+	<!-- end tag cloud widget -->
+	<!-- start widget -->
+	<!-- end widget -->
+	<!-- start widget -->
+	<!-- end widget -->
+	</aside>
+</div>
+</div>
+</section>
+<div class="copyright">
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+			<p>
+				如数据侵犯了你的个人权益，请联系删除，如希望收录你的博客或者网站，或者有好的资源要推荐，请联系：lambdaxiao@gmail.com
+			</p>
+		</div>
+	</div>
+</div>
+</div>
+<a href="#" id="back-to-top"><i class="fa fa-angle-up"></i></a>
+<script type="text/javascript" src="../static/js/search.js"></script>
+<script type="text/javascript" src="../static/js/main.js"></script>
+<script type="text/javascript">
+    function btn() {
+        var v = document.getElementById("searchText").value;
+        if (v != '') {
+            var url = chooseSerarch()
+            if (url == '') {
+                search("https://www.baidu.com/s?wd=" + v)
+            } else {
+                if (url == 0) {
+                    search("https://www.baidu.com/s?wd=" + v)
+                } else if (url == 1) {
+                    search("https://www.google.com.hk/search?q=" + v)
+                } else if (url == 2) {
+                    search('https://cn.bing.com/search?q=' + v)
+                }else if (url == 3) {
+                    search('https://github.com/search?q=' + v)
+                }
+            }
+            $("#auto").empty();
+            $("#auto").hide();
+        }
+    }
+    function search(url) {
+        window.open(url)
+    }
+    function chooseSerarch() {
+        var radios = document.getElementsByName("check");
+        for (radio in radios) {
+            if (radios[radio].checked) {
+                val = radios[radio].value;
+                return val
+                break;
+            }
+        }
+    }
+    document.onkeydown = function (e) {
+        var theEvent = window.event || e;
+        var code = theEvent.keyCode || theEvent.which;
+        if (code == "13") {//keyCode=13是回车键
+            var v = document.getElementById("searchText").value;
+            if (v != '') {
+                var url = chooseSerarch()
+                if (url == '') {
+                    search("https://www.baidu.com/s?wd=" + v)
+                } else {
+                    if (url == 0) {
+                        search("https://www.baidu.com/s?wd=" + v)
+                    } else if (url == 1) {
+                        search("https://www.google.com.hk/search?q=" + v)
+                    } else if (url == 2) {
+                        search('https://cn.bing.com/search?q=' + v)
+                    }else if (url == 3) {
+                        search('https://github.com/search?q=' + v)
+                    }
+                }
+                $("#auto").empty();
+                $("#auto").hide();
+            }
+        }
+    }
+    $("document").ready(function () {
+        $(".menu li").click(function () {
+            $(".menu li").removeClass("nav-current");//首先移除全部的active
+            $(this).addClass("nav-current");//选中的添加acrive
+        });
+    });
+    var today = new Date();
+    var weeks = ["日", "一", "二", "三", "四", "五", "六"];
+    $('.showtime').html(today.getFullYear() + "年" + (today.getMonth() + 1) + "月" + today.getDate() + "日 星期" + weeks[today.getDay()]);
+</script>
+</body>
+</html>
