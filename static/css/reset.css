@@ -49,12 +49,12 @@ h6 {
 }
 
 a {
-	color: #FF9800;
+	color: #5cb85c;
 	outline: none;
 }
 
 a:hover {
-	color: #FF9800;
+	color: #5cb85c;
 }
 
 a:active, a:focus, a img {
@@ -71,8 +71,8 @@ li {
 }
 
 .btn-default {
-	border: 1px solid #FF9800;
-	background: #FF9800;
+	border: 1px solid #5cb85c;
+	background: #5cb85c;
 	color: #ffffff;
 	-webkit-transition: all 0.2s ease-in-out;
 	-o-transition: all 0.2s ease-in-out;
@@ -105,12 +105,12 @@ input[type="search"], input[type="text"], input[type="url"], input[type="email"]
 }
 
 input[type="search"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="email"]:focus, textarea:focus {
-	border: 1px solid #FF9800;
+	border: 1px solid #5cb85c;
 	outline: none;
 }
 
 blockquote {
-	border-left: 4px solid #FF9800;
+	border-left: 4px solid #5cb85c;
 }
 
 pre {
@@ -121,13 +121,13 @@ pre {
 
 ::-moz-selection {
 	color: #ffffff;
-	background: #FF9800;
+	background: #5cb85c;
 	text-shadow: none;
 }
 
 ::selection {
 	color: #ffffff;
-	background: #FF9800;
+	background: #5cb85c;
 	text-shadow: none;
 }
 /* header */
@@ -189,7 +189,7 @@ pre {
 }
 
 .main-navigation .menu li.nav-current {
-	border-bottom: 2px solid #FF9800;
+	border-bottom: 2px solid #5cb85c;
 	margin-bottom: -2px;
 }
 
@@ -201,7 +201,7 @@ pre {
 }
 
 .main-navigation .menu li:hover > a {
-	color: #FF9800;
+	color: #5cb85c;
 	text-decoration: none;
 }
 
@@ -234,7 +234,7 @@ pre {
 }
 
 .main-navigation .menu li ul:hover > a {
-	color: #FF9800;
+	color: #5cb85c;
 }
 
 .main-navigation .menu li:hover ul {
@@ -254,7 +254,7 @@ pre {
 	}
 
 	.main-navigation .menu li:hover > a {
-		color: #FF9800;
+		color: #5cb85c;
 		text-decoration: none;
 	}
 
@@ -301,7 +301,7 @@ pre {
 
 .post .featured {
 	position: absolute;
-	background: #FF9800;
+	background: #5cb85c;
 	color: #ffffff;
 	text-align: center;
 	top: -12px;
@@ -380,7 +380,7 @@ pre {
 }
 
 .post .post-footer .tag-list a:hover {
-	color: #FF9800;
+	color: #5cb85c;
 }
 /* post content */
 
@@ -511,7 +511,7 @@ pre {
 
 .post-content blockquote {
 	margin: 0 0 1.64em 0;
-	border-left: 3px solid #FF9800;
+	border-left: 3px solid #5cb85c;
 	padding-left: 12px;
 	color: #666664;
 }
@@ -689,7 +689,7 @@ pre {
 	text-align: center;
 	display: inline-block;
 	color: #ffffff;
-	background: #FF9800;
+	background: #5cb85c;
 	border-radius: 2px;
 }
 
@@ -706,7 +706,7 @@ pre {
 }
 
 .pagination .page-number {
-	background: #FF9800;
+	background: #5cb85c;
 	color: #ffffff;
 	margin: 0 3px;
 	display: inline-block;
@@ -799,7 +799,7 @@ pre {
 	content: "";
 	width: 90px;
 	height: 1px;
-	background: #FF9800;
+	background: #5cb85c;
 	position: absolute;
 	left: 0;
 	bottom: -1px;
@@ -823,7 +823,7 @@ pre {
 }
 
 .widget .recent-post .recent-single-post .post-title:hover {
-	color: #FF9800;
+	color: #5cb85c;
 	text-decoration: none;
 }
 
@@ -845,8 +845,8 @@ pre {
 
 .widget .tag-cloud a:hover {
 	color: #ffffff;
-	background: #FF9800;
-	border: 1px solid #FF9800;
+	background: #5cb85c;
+	border: 1px solid #5cb85c;
 	text-decoration: none;
 }
 
@@ -874,8 +874,8 @@ pre {
 
 .widget .social li:hover i {
 	color: #ffffff;
-	background: #FF9800;
-	border: 1px solid #FF9800;
+	background: #5cb85c;
+	border: 1px solid #5cb85c;
 }
 
 .widget .newsletter .input-group {
@@ -957,7 +957,7 @@ pre {
 }
 
 .main-footer .widget .tag-cloud a:hover {
-	border: 1px solid #FF9800;
+	border: 1px solid #5cb85c;
 }
 
 .main-footer .widget .friend-links a {
@@ -982,7 +982,7 @@ pre {
 }
 
 .main-footer .widget .recent-post .recent-single-post .post-title:hover {
-	color: #FF9800;
+	color: #5cb85c;
 }
 
 .main-footer .widget .recent-post .recent-single-post .date {
@@ -1020,7 +1020,7 @@ pre {
 }
 
 #back-to-top:hover {
-	background: #FF9800;
+	background: #5cb85c;
 }
 
 #back-to-top i {
@@ -1048,7 +1048,7 @@ pre {
 }
 
 .tab-item a:hover {
-	color: #FF9800;
+	color: #5cb85c;
 }
 
 .box-item {
@@ -1066,11 +1066,11 @@ pre {
 }
 
 .topnews a:hover {
-	color: #FF9800;
+	color: #5cb85c;
 }
 
 .topnews a:visited {
-	color: #FF9800;
+	color: #5cb85c;
 }
 
 .calendar {
@@ -1083,7 +1083,7 @@ pre {
 }
 
 .showtime {
-	color: #FF9800;
+	color: #5cb85c;
 	font-size: 15px;
 }
 
@@ -1145,7 +1145,7 @@ pre {
 .block .title {
 	margin-top: 0;
 	padding-bottom: 7px;
-	border-bottom: 1px solid #FF9800;
+	border-bottom: 1px solid #5cb85c;
 	position: relative;
 }
 
@@ -1153,7 +1153,7 @@ pre {
 	content: "";
 	width: 90px;
 	height: 1px;
-	background: #FF9800;
+	background: #5cb85c;
 	position: absolute;
 	left: 0;
 	bottom: -1px;
